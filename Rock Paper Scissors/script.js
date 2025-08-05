@@ -21,6 +21,7 @@ buttonReset.addEventListener("click", () => {
 const possibilità = ["rock", "paper", "scissor"];
 let playerScore = 1;
 let computerScore = 1;
+
 function logicaGame(playerChoice) {
   const computerChoice =
     possibilità[Math.floor(Math.random() * possibilità.length)];
@@ -31,18 +32,18 @@ function logicaGame(playerChoice) {
     result.textContent = "DRAW";
   } else if (playerChoice === "rock" && computerChoice === "scissor") {
     console.log(`You Win with :${playerChoice} vs Computer :${computerChoice}`);
-    bgContainer.style.backgroundColor = "green";
+    bgContainer.style.backgroundColor = "#00FF00";
     result.textContent = "You WIN";
     myScore.textContent = playerScore++;
   } else if (playerChoice === "paper" && computerChoice === "rock") {
     console.log(`You Win with :${playerChoice} vs Computer :${computerChoice}`);
-    bgContainer.style.backgroundColor = "green";
+    bgContainer.style.backgroundColor = "#00FF00";
     result.textContent = "You WIN";
 
     myScore.textContent = playerScore++;
   } else if (playerChoice === "scissor" && computerChoice === "paper") {
     console.log(`You Win with :${playerChoice} vs Computer :${computerChoice}`);
-    bgContainer.style.backgroundColor = "green";
+    bgContainer.style.backgroundColor = "#00FF00";
     result.textContent = "You WIN";
     myScore.textContent = playerScore++;
   } else {

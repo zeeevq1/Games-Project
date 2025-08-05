@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex justify-evenly">
+      <p class="text-[2rem] mb-10">My Score: <span class="myScore">0</span></p>
+      <p class="text-[2rem] mb-10">Pc Score: <span class="pcScore">0</span></p>
+    </div>
+    <h1
+      class="hidden result text-[4rem] text-center text-black justify-center mt-10"
+    >
+      You Lose
+    </h1>
+
+    <div
+      class="container w-[800px] h-[50vh] border-1 shadow-lg mx-auto rounded-[1rem] mt-10 text-center flex justify-center items-center"
+    >
+      <div class="w-[100%] flex gap-[2rem] justify-center">
+        <button
+          class="rock cursor-pointer px-[3rem] py-[1.5rem] text-[2rem] rounded-md border-1 hover:shadow-md hover:bg-blue-100"
+        >
+          👊
+        </button>
+        <button
+          class="scissor cursor-pointer px-[3rem] py-[1.5rem] text-[2rem] rounded-md border-1 border-blue-500 hover:shadow-md hover:bg-blue-100"
+        >
+          ✌️
+        </button>
+        <button
+          class="paper cursor-pointer px-[3rem] py-[1.5rem] text-[2rem] rounded-md border-1 border-blue-500 hover:shadow-md hover:bg-blue-100"
+        >
+          🤚
+        </button>
+      </div>
+    </div>
+    <div class="w-[100%] flex justify-center">
+      <button
+        class="btnReset px-[4rem] py-[1rem] text-[2rem] text-white block bg-black rounded-lg mt-10 cursor-pointer"
+      >
+        RESET
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
